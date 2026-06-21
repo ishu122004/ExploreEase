@@ -1,0 +1,701 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 1;
+}
+.navbar__s1{
+    border-radius: 30px;
+}
+.navbar__s1 .gradient-btn{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 5px 10px;
+
+    border: 3px solid transparent;
+    border-radius: 50px;
+
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, purple, blue, pink) border-box;
+
+    cursor: pointer;
+}
+.navbar__s2{
+    align-items: center;
+    
+    border: solid black 2px;
+    border-radius: 30px;
+    width:45%;
+    gap:5px;
+    padding: 8px;
+
+    display:flex;
+}
+.navbar__s2 input{
+    
+    font-size: 16px;
+    width:100%;
+    background-color:white;
+    border: none;
+    margin:3px;
+
+
+}
+.navbar__s3{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    align-items: center;
+}
+.navbar__s2 .nav__input{
+    position:absolute;
+    padding: 10px;
+}
+.navbar__s4 button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.categories{
+    display: flex;
+    gap:30px;
+    padding-left:100px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:solid gray 1px;
+}
+
+.travel-img{
+    width: 100%; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+.travel-img img{
+    width: 100%;
+    height: 500px;
+}
+.travel__search{
+    width: 40%;
+    display: flex;
+    
+    border-radius: 30px;
+    border: solid black 1px;
+    position: absolute;
+    gap:3px;
+    padding: 15px;
+    background-color: white;
+    
+}
+.travel__search input{
+    width:40%;
+    border:none;
+    color: black;  
+}
+.travel__head{
+    color: black;
+    position: absolute;
+    margin-bottom: 100px;
+    
+}
+.travel-subtitle{
+    width:100%;
+    display: flex;
+    gap:5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: space-around;
+
+  
+}
+.sub__cont1{
+    width:22%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    padding: 35px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+}
+.sub__cont2{
+    width:22%;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+}
+.sub__cont3{
+    width:22%;box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    padding: 35px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex-basis: 30%;
+}
+.sub__para1{
+    text-align: center;
+
+}
+.travel-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.travel-pics{
+    width: 100%;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+     margin: 10px 20px; 
+}
+.travel-pics img{
+    width: 85%;
+    height: 300px;
+    position: relative;
+}
+
+.travel__sub1{
+    position: absolute;
+    color: purple;
+    top:10%;left:10%;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.travel__sub2{
+    position: absolute;
+    color: purple;
+    top:10%;
+    left:10%;
+    font-size: 22px;
+     font-weight: 900;
+}
+
+.travel__sub3{
+    position: absolute;
+    color: purple;
+    top:10%;
+    left:10%;
+    font-size: 22px;
+     font-weight: 900;
+}
+.travel__subtitle1,
+.travel__subtitle2,
+.travel__subtitle3{
+    position: relative;
+    flex-basis: 30%;
+}
+.image1{
+     width: 60%;
+     margin:10px;
+       flex-basis: 22%;
+    flex-grow: 1;
+     position: relative;
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+     border-radius: 20px;
+     flex-basis: 50%;
+}
+.image2{
+    width: 60%;
+     margin:10px;
+       flex-basis: 22%;
+    flex-grow: 1;
+     position: relative;
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+   border-radius: 20px;
+   flex-basis: 50%;
+}
+.image3{
+    width:60%;
+     margin:10px;
+     position: relative;
+       flex-basis: 22%;
+    flex-grow: 1;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    flex-basis: 50%;
+}
+
+.travel-ad{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 40%;
+    margin:35px 15px;
+}
+.travel-ad img{
+    height: 100px;
+    width: 60%;
+    
+}
+.tra__ads{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:2%;
+    background-color: black;
+    align-items: center;
+    gap: 50px;
+    margin: 17px 15px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+.ad__button{
+    padding: 5px;
+    color:black;
+    background-color: rgb(201, 201, 51);
+    width:100px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.7);
+}
+.ad__con1{
+    color: yellow;
+}
+.ad__con2{
+    color: white;
+}
+/* .Travel-fly{
+    display:flex;
+    gap:25px;
+    margin:20px 0px;
+    width:100%;
+}
+
+.fly__cont1 img{
+    flex:1 1 0;
+    min-width: 0;
+    height:400px;
+    object-fit:cover;
+    border-radius:100px;
+}
+.fly1__h1{
+    position: absolute;
+    top:20px;
+}
+.fly__cont2 img{
+    flex:1 1 0;
+    min-width: 0;
+    height:400px;
+    object-fit:cover;
+    border-radius:100px;
+}
+.fly2__h1{
+    position:absolute;
+    top: 20px;
+}
+.fly__cont3 img{
+    flex:1 1 0;
+    min-width: 0;
+    height:400px;
+    object-fit:cover;
+    border-radius:100px;
+}
+.fly3__h1{
+    position: absolute;
+    top:20px;
+}
+.fly__cont4 img{
+    flex:1 1 0;
+    min-width: 0;
+    height:400px;
+    object-fit:cover;
+    border-radius:100px;
+    
+}
+
+.fly4__h1{
+    position: absolute;
+    top:20px;
+}
+.fly__cont5 img{
+    flex:1 1 0;
+    min-width: 0;
+    height:400px;
+    object-fit:cover;
+    border-radius:100px;
+   
+}
+.fly5__h1{
+    position: absolute;
+    top:20px;
+}
+ */
+.Travel-fly{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.fly__cont1,
+.fly__cont2,
+.fly__cont3,
+.fly__cont4,
+.fly__cont5{
+    flex: 1;
+    position: relative;
+    flex-wrap: wrap;
+    flex-basis: 13%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    flex-basis:15%;
+}
+
+.fly__cont1 img,
+.fly__cont2 img,
+.fly__cont3 img,
+.fly__cont4 img,
+.fly__cont5 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100px;
+box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+
+}
+.fly1__h1,.fly2__h1,.fly3__h1,.fly4__h1,.fly5__h1{
+    position: absolute;
+    top:60px;
+    
+}
+.fly-head{
+    padding-left: 50px;
+    width: 100%;
+}
+.trav-spots{
+    display: flex;
+    flex-direction: column;
+    padding-left:50px;
+    gap:10px;
+    width: 100%;
+}
+.travel-picks{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+
+    gap:25px;
+    margin: 10px;
+}
+.travel-picks img{
+    width: 100%;
+    height: 200px;
+}
+.travel__card{
+     flex-basis: 20%;
+     flex-grow: 1;
+}
+.im{
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+     height:130px;
+     text-align: center;
+     margin:20px 0px;
+     align-items: center;
+     padding: 20px;
+}
+.tripfound{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+.tripfound img{
+    flex-basis:40%;
+    flex-grow: 1;
+    height: 300px;
+    margin: 5%;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+
+}
+.trip-content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    flex-basis:40%;
+    flex-grow: 1;
+    position: relative;
+}
+.fa-face-grin-stars{
+     position: absolute;
+     transform: translate(-50%,50%) rotateY(90deg);
+    font-size:120px;
+    top:-30px;
+    left:-30px;
+    animation:rotate 1s linear infinite reverse;
+ 
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-180deg);
+    }
+}
+
+.trip-content button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding:10px;
+    border-radius: 30px;
+}
+.travel-choice{
+    background-color: black;
+    color: white;
+    width:100%;
+    height:500px;
+   display: flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choice-part{
+     width:50%;
+    height: 450px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left:40px;
+}
+.choice-part button{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 3%;
+    border: none;
+}
+.choice-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.choice-2 img{
+    width:90%;
+    flex-basis: 70%;
+    height: 350px;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.star{
+    height:50px;
+    width:50px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+}
+.star-gap{
+    margin:5px 2px
+}
+.star{
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: alternate;
+}
+    @keyframes glow {
+        0%{
+             filter: drop-shadow(0px 0px 5px purple);
+        }
+        100%{
+             filter: drop-shadow(0px 0px 20px purple);
+        }
+    }
+    
+.choice-2 img{
+      transition: transform 2 s linear;
+}
+.choice-2 img:hover{
+    transform: rotateY(360deg);
+}
+
+@media screen and (max-width: 600px) {
+
+    .travel__head{
+        text-align: center;
+        font-size: 13px;
+    
+    }
+    .travh1{
+        width: 100%;
+        text-align: center;
+    }
+    .travel-subtitle{
+        margin:10px 0px;
+        height:200px;
+    }
+    .sub__h1{
+        text-align: center;
+        flex-basis: 22%;
+        flex-grow: 1;
+    }
+    .sub__para{
+        text-align: center;
+        flex-basis: 22%;
+        flex-grow: 1;
+    }
+    .travel-subtitle{
+        width:100%;
+        gap:3px;
+    }
+    .sub__cont1{
+         flex-basis: 20%;
+        flex-grow: 1;
+    }
+    .sub__cont2{
+         flex-basis: 20%;
+        flex-grow: 1;
+    }
+    .sub__cont3{
+         flex-basis: 20%;
+        flex-grow: 1;
+    }
+    .travel-head{
+        margin:60px 0px;
+    }
+    .travel-pics{
+        margin:0px 0px;
+    }
+    .image1{
+        margin:0px 0px;
+    }
+    .image2{
+        margin:0px 0px;
+    }
+    .image3{
+        margin:0px 0px;
+    }
+    .travel-ad{
+        width:100%;
+    }
+    .travel-ad img{
+        width:100;
+    }
+    .tra__ads{
+        width:60%;
+        padding: 10px;
+        margin:10px;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+    .fly1__h1{
+        font-size: 15px;
+    }
+    .fly2__h1{
+        font-size: 15px;
+        text-align: center;
+    }.fly3__h1{
+        font-size: 15px;
+         text-align: center;
+    }.fly4__h1{
+        font-size: 15px;
+         text-align: center;
+    }.fly5__h1{
+        font-size: 15px;
+         text-align: center;
+    }
+    .ad__button{
+padding-left:0px;
+    }
+    .travel-picks{
+        margin:20px 0px;
+        gap:10px;
+    }
+    .im{
+        height:150px;
+        padding:10px;
+        text-align: center;
+        
+    }
+   .dummy{
+    display: none !important;
+}
+.tripfound{
+    width:100%
+}
+.trip-img{
+ width:50%
+}
+.trip-content{
+     width:50%
+}
+.fa-face-grin-stars{
+    height: 5px;
+    width:5px;
+    left:-50px;
+    font-size:120px;
+    top:-30px;
+    left:-30px; 
+}
+.travel-choice{
+    width:100%;
+}
+.choice-part{
+    width: 50%;
+    height
+}
+.choice-2{
+    width:50%;
+    height:500px;
+}
+}
+
+
+
