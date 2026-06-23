@@ -9,33 +9,40 @@ body{
 .navbar{
     background-color: white;
     color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:10px;
-    flex-wrap: wrap;
+   display: flex;
+justify-content: center;
+align-items: center;
     position: sticky;
     z-index: 1;
+    margin: 20px 10px;
 }
-.navbar__s1{
-    border-radius: 30px;
+.fa-truck-fast{
+    font-size: 20px;
 }
-.navbar__s1 .gradient-btn{
-    
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    padding: 5px 10px;
-
+.navbar .gradient-btn{
     border: 3px solid transparent;
     border-radius: 50px;
-
+    display: flex;
+    align-items: center;
     background:
         linear-gradient(white, white) padding-box,
         linear-gradient(to right, purple, blue, pink) border-box;
 
+gap:2px;
+padding:10px 10px;
     cursor: pointer;
+     border-radius: 30px;
+}
+.navbar h1{
+    text-align: center;
+    
+}
+.nav__2{
+    margin:20px 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    justify-content: space-around;
 }
 .navbar__s2{
     align-items: center;
@@ -49,20 +56,27 @@ body{
     display:flex;
 }
 .navbar__s2 input{
-    
+  
     font-size: 16px;
     width:100%;
     background-color:white;
     border: none;
     margin:3px;
 
-
+}
+.navbar__s2 button{
+    background-color: black;
+    border-radius: 20px;
+    padding:10px 10px;
+    color: white;
+    margin-right: 20px;
 }
 .navbar__s3{
     display: flex;
     gap: 30px;
     position: relative;
     align-items: center;
+    justify-content: space-around;
 }
 .navbar__s2 .nav__input{
     position:absolute;
@@ -72,7 +86,7 @@ body{
     background-color: black;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px 10px;
     width: 80px;
     border-radius: 30px;
     margin: 10px;
@@ -80,7 +94,7 @@ body{
 .categories{
     display: flex;
     gap:30px;
-    padding-left:100px;
+    padding:10px 20px;
     margin-top: 15px;
     padding-bottom: 10px;
     border-bottom:solid gray 1px;
@@ -97,7 +111,7 @@ body{
 }
 .travel-img img{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 .travel__search{
     width: 40%;
@@ -111,6 +125,64 @@ body{
     background-color: white;
     
 }
+.icons{
+     right:20px;
+     top:20px;
+position: absolute;
+}
+.vehicle{
+     display: flex;
+    position: absolute;
+    gap:10px;
+    right: 20px;
+    
+    top:20px;
+    font-size: 50px;
+    color: white;
+}
+.icon1{
+    display: flex;
+    position: absolute;
+    gap:20px;
+    right: 20px;
+    
+    top:80px;
+    font-size: 40px;
+}
+.places{
+    position: absolute;
+    display: flex;
+ top:120px;
+ right:20px;
+  gap:10px;
+  color: white;
+    font-size: 40px;
+}
+.icon2{
+    position: absolute;
+    display: flex;
+ top:170px;
+ right:20px;
+  gap:20px;
+    font-size: 40px;
+}
+.icon3{
+    position: absolute;
+     display: flex;
+      gap:20px;
+right:20px;
+ top:220px;
+    font-size: 40px;
+}
+.icon4{
+    position: absolute;
+     display: flex;
+     top:270px;
+       gap:20px;
+       right:20px;
+    font-size: 40px;
+} 
+
 .travel__search input{
     width:40%;
     border:none;
@@ -279,7 +351,7 @@ body{
     align-items: center;
     gap: 50px;
     margin: 17px 15px;
-    padding: 10px 10px;
+    padding: 10px 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
 }
