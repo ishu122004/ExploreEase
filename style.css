@@ -7,14 +7,23 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 .navbar{
-    background-color: white;
+    background-image: url("./images/navbar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column; /* Important */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
     color: black;
-   display: flex;
-justify-content: center;
-align-items: center;
     position: sticky;
     z-index: 1;
-    margin: 20px 10px;
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    padding: 20px;
 }
 .fa-truck-fast{
     font-size: 20px;
@@ -27,7 +36,7 @@ align-items: center;
     background:
         linear-gradient(white, white) padding-box,
         linear-gradient(to right, purple, blue, pink) border-box;
-
+    background-color: transparent; 
 gap:2px;
 padding:10px 10px;
     cursor: pointer;
@@ -38,31 +47,34 @@ padding:10px 10px;
     
 }
 .nav__2{
-    margin:20px 10px;
     display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .navbar__s2{
+    display: flex;
     align-items: center;
-    
     border: solid black 2px;
     border-radius: 30px;
-    width:45%;
-    gap:5px;
+    width: 40%;
+    min-width: 300px;
     padding: 8px;
-
-    display:flex;
 }
 .navbar__s2 input{
   
     font-size: 16px;
     width:100%;
-    background-color:white;
+    background-color:transparent;
     border: none;
-    margin:3px;
-
+    margin:3px; 
+    color: black;
+}
+.navbar__s2 input::placeholder{
+    color: black;
 }
 .navbar__s2 button{
     background-color: black;
@@ -73,10 +85,9 @@ padding:10px 10px;
 }
 .navbar__s3{
     display: flex;
-    gap: 30px;
-    position: relative;
+    gap: 20px;
     align-items: center;
-    justify-content: space-around;
+    color: white;
 }
 .navbar__s2 .nav__input{
     position:absolute;
@@ -94,10 +105,9 @@ padding:10px 10px;
 .categories{
     display: flex;
     gap:30px;
-    padding:10px 20px;
-    margin-top: 15px;
-    padding-bottom: 10px;
-    border-bottom:solid gray 1px;
+position: absolute;
+    top: 5px;
+    left:5px;
 }
 
 .travel-img{
@@ -110,6 +120,8 @@ padding:10px 10px;
      height: 500px;
      width: 100%;
      background-color: aqua;
+     border: solid black 1px;
+     border-radius: 10px;
 }
 
 .travel__search{
